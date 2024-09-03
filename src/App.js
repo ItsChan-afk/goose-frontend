@@ -48,7 +48,7 @@ const App = () => {
         <Route path='/geese' element={<Geese />} />
         <Route path="/ducks" element={<Ducks />} />
         <Route path="/neutrals" element={<Neutrals />} />
-        <Route path="/every" element={<Every/>} />
+        <Route path="/" element={<Every/>} />
         <Route path="/roles/:slug" element={<Selected />} />
       </Routes>
     </Router>
