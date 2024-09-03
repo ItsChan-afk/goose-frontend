@@ -11,7 +11,7 @@ const Selected = () => {
   useEffect(() => {
     async function getData() {
       try {
-        const res = await axios.get(`http://localhost:4000/api/roles/${slug}`);
+        const res = await axios.get(`https://goose-backend-g6bw.vercel.app/api/roles/${slug}`);
         setRole(res.data);
         if(role.color === 'goose'){
           setColor('green')

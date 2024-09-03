@@ -18,7 +18,7 @@ const App = () => {
           >
             All Roles
           </Link>
-          <Link
+          {/* <Link
             to="/ducks"
             className="hover:font-bold hover:scale-105 hover:text-yellow-300 transition duration-300"
           >
@@ -35,7 +35,7 @@ const App = () => {
             className="hover:font-bold hover:scale-105 hover:text-yellow-300 transition duration-300"
           >
             Neutrals
-          </Link>
+          </Link> */}
           <Link
             to="/guides"
             className="hover:font-bold hover:scale-105 hover:text-yellow-300 transition duration-300"
