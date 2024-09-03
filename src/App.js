@@ -5,6 +5,7 @@ import Every from "./screens/Every";
 import Geese from './screens/Geese';
 import Neutrals from './screens/Neutrals';
 import Selected from "./screens/Selected";
+import Guides from "./screens/Guides";
 
 
 const App = () => {
@@ -13,7 +14,7 @@ const App = () => {
       <header className="flex justify-between items-center bg-orange-600 p-6 text-white shadow-md">
         <nav className="flex gap-6">
           <Link
-            to="/every"
+            to="/"
             className="hover:font-bold hover:scale-105 hover:text-yellow-300 transition duration-300"
           >
             All Roles
@@ -45,6 +46,7 @@ const App = () => {
         </nav>
       </header>
       <Routes>
+        <Route path="/guides" element={<Guides />} />
         <Route path='/geese' element={<Geese />} />
         <Route path="/ducks" element={<Ducks />} />
         <Route path="/neutrals" element={<Neutrals />} />
