@@ -2,7 +2,7 @@ import React from 'react'
 
 const Guides = () => {
   return (
-    <div>XD</div>
+    <div>Guides</div>
   )
 }
 

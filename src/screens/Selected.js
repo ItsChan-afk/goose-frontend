@@ -11,6 +11,7 @@ const Selected = () => {
   useEffect(() => {
     async function getData() {
       try {
+        //http://localhost:4000/api/roles/${slug}
         const res = await axios.get(`https://goose-backend-g6bw.vercel.app/api/roles/${slug}`);
         setRole(res.data);
         if(role.color === 'goose'){
@@ -31,9 +32,9 @@ const Selected = () => {
       <img
         src={role.image}
         alt={role.name}
-        className="object-contain border-2 "
+        className="object-contain border-2 max-h-[20rem] w-[20%]"
       />
-      <div className="bg-biege-900 object-contain p-3 border-2">
+      <div className="bg-biege-900 object-contain p-3 border-2 w-[70%]">
         <h3 className="text-xl font-bold my-3">{role.name}</h3>
         <div className="underline w-full border-t-2 border-gray-500 "></div>
         <p className="text-md my-3">{role.short}</p>
