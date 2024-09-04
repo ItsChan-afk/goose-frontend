@@ -54,7 +54,7 @@ const Every = () => {
         </button>
       </div>
 
-      <div className="grid 2xl:grid-cols-4 xl:grid-cols-4 gap-[5rem] m-10 sm:grid-cols-1 md:grid-cols-1">
+      <div className="grid 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-1 gap-[5rem] m-10">
         
         {filteredGeese.map((goose) => (
           <div
