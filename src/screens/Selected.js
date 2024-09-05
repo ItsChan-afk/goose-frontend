@@ -11,7 +11,8 @@ const Selected = () => {
   useEffect(() => {
     async function getData() {
       try {
-        //http://localhost:4000/api/roles/${slug}
+       
+        // const res = await axios.get(`http://localhost:4000/api/roles/${slug}`);
         const res = await axios.get(`https://goose-backend-g6bw.vercel.app/api/roles/${slug}`);
         setRole(res.data);
         if(role.color === 'goose'){
@@ -28,11 +29,12 @@ const Selected = () => {
   }, [slug]);
 
   return (
-    <div className="flex justify-center gap-[5rem] p-5 m-5 max-h-[30rem] border-2 rounded-md border-orange-500 shadow-md transition hover:shadow-lg hover:shadow-orange-500 ">
+    <div className="flex justify-center gap-[5rem] p-5 m-5 max-h-[30rem] border-2 rounded-md border-orange-500 shadow-sm transition hover:shadow-md hover:shadow-orange-500
+    ">
       <img
         src={role.image}
         alt={role.name}
-        className="object-contain border-2 max-h-[20rem] w-[20%]"
+        className="object-contain border-2 max-h-[20rem] w-[20%] md:w-[20%] sm:w-[40%]"
       />
       <div className="bg-biege-900 object-contain p-3 border-2 w-[70%]">
         <h3 className="text-xl font-bold my-3">{role.name}</h3>

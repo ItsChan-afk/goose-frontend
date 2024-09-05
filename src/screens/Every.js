@@ -11,8 +11,8 @@ const Every = () => {
   useEffect(() => {
     async function getData() {
       try {
-        // "http://localhost:4000/api/every"
         
+        // const ourdata = await axios.get("http://localhost:4000/api/every") 
         const ourdata = await axios.get("https://goose-backend-g6bw.vercel.app/api/every");
         setGeese(ourdata.data);
       } catch (err) {
